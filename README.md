@@ -22,6 +22,15 @@ declare module 'electron' {
 }
 ```
 
+``` js
+require('@tybys/electron-ipc-handle-invoke/main.js')
+const { ipcMain } = require('electron')
+
+ipcMain.handle('doSomething', (e, msg) => {
+  return msg
+})
+```
+
 ### Renderer
 
 ``` ts
@@ -32,4 +41,15 @@ declare module 'electron' {
     invoke(channel: string, ...args: any[]): Promise<any>;
   }
 }
+```
+
+``` js
+require('@tybys/electron-ipc-handle-invoke/renderer.js')
+const { ipcRenderer } = require('electron')
+
+ipcRenderer.invoke('doSomething', 'message').then(res => {
+  console.log(res === 'message') // true
+}).catch(err => {
+  console.log(err)
+})
 ```

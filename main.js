@@ -38,7 +38,11 @@ if (!ipcMain.handle) {
     if (_invokeHandlers.has(method)) {
       _invokeHandlers.get(method)(event, oid, ...args)
     } else {
-      event.sender.send('__ipc_invoked__', oid, parseValue(new Error(`No handler registered for '${method}'`)), parseValue(undefined))
+      const msg = `No handler registered for '${method}'`
+      console.log(`Error occurred in handler for '${method}': ${msg}`)
+      event.sender.send('__ipc_invoked__', oid, parseValue(new Error(`Error invoking remote method '${method}': ${msg}`)), parseValue(undefined))
     }
   })
+
+  global.__electron_ipc_handle_invoke__ = true
 }

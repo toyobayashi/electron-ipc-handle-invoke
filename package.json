@@ -1,7 +1,7 @@
 {
   "name": "@tybys/electron-ipc-handle-invoke",
-  "version": "1.0.0",
-  "description": "ipcMain.handle() and ipcRenderer.invoke() polyfill",
+  "version": "1.0.1",
+  "description": "ipcMain.handle() and ipcRenderer.invoke() polyfill.",
   "main": "main.js",
   "scripts": {
     "test": "tsc -p ./test/tsconfig.json&&electron test"
