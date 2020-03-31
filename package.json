@@ -21,6 +21,9 @@
   "bugs": {
     "url": "https://github.com/toyobayashi/electron-ipc-handle-invoke/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/toyobayashi/electron-ipc-handle-invoke#readme",
   "dependencies": {
     "@tybys/oid": "^1.0.8"
