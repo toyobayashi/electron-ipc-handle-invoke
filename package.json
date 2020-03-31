@@ -1,6 +1,6 @@
 {
   "name": "@tybys/electron-ipc-handle-invoke",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ipcMain.handle() and ipcRenderer.invoke() polyfill.",
   "main": "main.js",
   "scripts": {
@@ -23,16 +23,16 @@
   },
   "homepage": "https://github.com/toyobayashi/electron-ipc-handle-invoke#readme",
   "dependencies": {
-    "@tybys/oid": "^1.0.4"
+    "@tybys/oid": "^1.0.8"
   },
   "devDependencies": {
-    "electron": "6.0.10",
-    "eslint": "^6.4.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
+    "electron": "6.1.5",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.8.3"
   }
 }
