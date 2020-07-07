@@ -29,7 +29,7 @@
     "@tybys/oid": "^1.0.8"
   },
   "devDependencies": {
-    "electron": "6.1.5",
+    "electron": "9.1.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.1",
     "eslint-plugin-import": "^2.20.2",
